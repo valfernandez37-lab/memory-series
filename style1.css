@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  background: #f7f7f7;
+  position: relative;
+}
+canvas {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+  width: 500px !important;
+  height: 500px !important;
+  outline: 10px solid rgb(241, 187, 72);
+  
+}
+
+#hub {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background-image: url('assets/fondos-02.png');
+  background-size: cover;
+  background-position: center;
+  min-width: 600px;
+  min-height: 800px;
+}
+.logo {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 0;
+  left: 50%;
+  display: block;
+  margin: 20px auto 1px;
+  width: 400px;
+}
+
+.titulo {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 15%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin-top: 2px;
+}
+
+.objeto {
+  position: absolute;
+  width: 280px;
+  top: 26%;
+  left: 20%;
+  transform: rotate(-1deg);
+  cursor:pointer;
+  transition: transform 0.5s ease;
+}
+.objeto:hover {
+  transform: rotate(1deg) translateY(-30px);
+  transition: transform 0.5s ease;
+}
+.objeto2 {
+  position: absolute;
+  width: 230px;
+  top: 28%;
+  left: 50%;
+  transform: rotate(1deg);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.objeto2:hover {
+  transform: rotate(-1deg) translateY(-30px);
+  transition: transform 0.5s ease;
+}
+
+.objeto3 {
+  position: absolute;
+  width: 185px;
+  top: 48%;
+  right: 55%;
+  rotate: 0;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.objeto3:hover {
+  transform: rotate(1deg) translateY(-30px);
+  transition: transform 0.5s ease;
+}
+
+.objeto4 {
+  position: absolute;
+  width: 255px;
+  top: 50%;
+  right: 25%;
+  transform: rotate(5deg);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.objeto4:hover {
+  transform: rotate(1deg) translateY(-30px);
+  transition: transform 0.5s ease;
+}
+
+
+.descripcion {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #222222;
+  white-space: nowrap;
+}
+
+
+#texto-sketch {
+  display: none;
+  position: fixed;
+  bottom: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgb(213, 70, 30);
+  opacity: 1;
+  z-index: 20;
+}
+
+ #home-btn img {
+  width: 250px;
+  display: block;
+}
+#home-btn {
+  position: fixed;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: none;
+  opacity: 1;
+}
+
+#next-btn img {
+  width: 50px;
+  display: block;
+}
+#next-btn {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: none;
+  opacity: 0.5;
+}
+#next-btn:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
